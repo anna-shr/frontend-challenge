@@ -77,7 +77,10 @@ export const CatGrid = ({
                 aria-label={cat.isFavorite ? 'Убрать из избранного' : 'Добавить в избранное'}
               >
                 <Image
-                  src={cat.isFavorite ? '/favorite.png' : '/favorite_border.png'}
+                  src={cat.isFavorite
+                    ? `${process.env.NEXT_PUBLIC_BASE_PATH}/favorite.png`
+                    : `${process.env.NEXT_PUBLIC_BASE_PATH}/favorite_border.png`
+                  }
                   alt=""
                   width={40}
                   height={40}
