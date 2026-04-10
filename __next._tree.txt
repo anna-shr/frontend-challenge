@@ -1,5 +1,5 @@
-:HL["/frontend-challenge/cat-pinterest-app/_next/static/chunks/0o4f5h0ww6uhk.css","style"]
-:HL["/frontend-challenge/cat-pinterest-app/_next/static/media/62d4b50592542c9f-s.p.0id408x23fv8q.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/frontend-challenge/cat-pinterest-app/_next/static/media/ce62453a442c7f35-s.p.0333ktddfbsxy.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/frontend-challenge/cat-pinterest-app/_next/static/chunks/0-0zn_0lgj_x7.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"yP9aWOGPrEkR44XXua1eh"}
+:HL["/frontend-challenge/_next/static/chunks/0o4f5h0ww6uhk.css","style"]
+:HL["/frontend-challenge/_next/static/media/62d4b50592542c9f-s.p.0id408x23fv8q.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/frontend-challenge/_next/static/media/ce62453a442c7f35-s.p.0333ktddfbsxy.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/frontend-challenge/_next/static/chunks/0-0zn_0lgj_x7.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"t3E3aU369r2nMnZLuo5Tp"}

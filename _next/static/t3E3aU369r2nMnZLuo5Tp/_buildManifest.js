@@ -1,7 +1,12 @@
 self.__BUILD_MANIFEST = {
   "__rewrites": {
     "afterFiles": [],
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/frontend-challenge//_next/:path+",
+        "destination": "/frontend-challenge/_next/:path+"
+      }
+    ],
     "fallback": []
   },
   "sortedPages": [
