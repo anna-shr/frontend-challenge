@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
   basePath: '/cat-pinterest-app',
   
   env: {
-    NEXT_PUBLIC_BASE_PATH: '/cat-pinterest-app',
+    NEXT_PUBLIC_BASE_PATH: '/frontend-challenge',
   },
 };
 
