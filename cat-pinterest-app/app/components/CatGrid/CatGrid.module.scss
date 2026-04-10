@@ -1,0 +1,246 @@
+.section {
+  width: 100%;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px;
+
+  &.spaceBetween {
+    justify-content: space-between;
+  }
+
+  &.flexStart {
+    justify-content: flex-start;
+  }
+}
+
+.card {
+  background: white;
+  overflow: visible;
+  cursor: pointer;
+  position: relative;
+  flex: 0 0 auto;
+  width: 225px;
+  transition: box-shadow 0.3s ease;
+  will-change: transform;
+
+  &:hover {
+    box-shadow: 0px 9px 18px 0px #0000002e, 0px 6px 5px 0px #0000003d;
+    z-index: 10;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  width: 225px;
+  height: 225px;
+  overflow: hidden;
+  background: #f3f4f6;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card:hover & {
+    width: 257px;
+    height: 257px;
+    margin: -16px;
+    box-shadow: 0px 9px 18px 0px #0000002e, 0px 6px 5px 0px #0000003d;
+  }
+}
+
+.catImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.favoriteBtn {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  width: 46px;
+  height: 46px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0;
+
+  .card:hover & {
+    opacity: 1;
+  }
+
+  &.alwaysVisible {
+    opacity: 1;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.92);
+  }
+}
+
+.heartIcon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    gap: 60px;
+  }
+
+  .card {
+    width: calc((100% - (4 * 60px)) / 5);
+    max-width: 225px;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .card:hover .imageWrapper {
+    width: calc(100% + 32px);
+    height: auto;
+    margin: -16px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 993px) {
+  .grid {
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .card {
+    width: calc((100% - (3 * 40px)) / 4);
+    max-width: 225px;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .card:hover .imageWrapper {
+    width: calc(100% + 32px);
+    height: auto;
+    margin: -16px;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+  .grid {
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .card {
+    width: calc((100% - (2 * 30px)) / 3);
+    max-width: 225px;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .card:hover .imageWrapper {
+    width: calc(100% + 30px);
+    height: auto;
+    margin: -15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+
+    .card:hover & {
+      width: calc(100% + 20px);
+      height: auto;
+      margin: -10px;
+    }
+  }
+
+  .favoriteBtn {
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .heartIcon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .card {
+    width: calc((100% - 16px) / 2);
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+
+    .card:hover & {
+      width: calc(100% + 16px);
+      height: auto;
+      margin: -8px;
+    }
+  }
+
+  .favoriteBtn {
+    width: 36px;
+    height: 36px;
+    bottom: 8px;
+    right: 8px;
+  }
+
+  .heartIcon {
+    width: 28px;
+    height: 28px;
+  }
+}

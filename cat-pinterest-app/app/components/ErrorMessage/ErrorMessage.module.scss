@@ -1,0 +1,28 @@
+.error {
+  text-align: center;
+  background: white;
+  padding: 48px 24px;
+  border-radius: 32px;
+  margin-top: 30px;
+}
+
+.retryBtn {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+
+  &:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}

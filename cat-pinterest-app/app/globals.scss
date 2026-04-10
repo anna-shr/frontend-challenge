@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+/* Общие переменные отступов */
+:root {
+  --padding-desktop: 60px;
+  --padding-laptop: 40px;
+  --padding-tablet: 30px;
+  --padding-mobile: 20px;
+  --padding-mobile-small: 16px;
+}
+
+.clear-favorites-btn {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 80, 80, 0.4);
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #e53e3e;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.clear-favorites-btn:hover {
+  background: #e53e3e;
+  border-color: #e53e3e;
+  color: white;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(229, 62, 62, 0.3);
+}
+
+.clear-favorites-btn:active {
+  transform: scale(0.96);
+}
+
+/* Infinite scroll sentinel */
+.sentinel {
+  height: 20px;
+  margin: 20px 0;
+}
+
+/* States */
+.loading-more {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.end-message {
+  text-align: center;
+  padding: 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.small-text {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.empty {
+  text-align: center;
+  background: white;
+  padding: 48px 24px;
+  border-radius: 32px;
+  margin-top: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.retry-btn {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.retry-btn:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Адаптивные отступы для контента */
+@media (max-width: 1200px) {
+  .favorites-header {
+    padding: 0 var(--padding-laptop);
+  }
+}
+
+@media (max-width: 992px) {
+  .favorites-header {
+    padding: 0 var(--padding-tablet);
+  }
+}
+
+@media (max-width: 768px) {
+  .favorites-header {
+    padding: 0 var(--padding-mobile);
+  }
+}
+
+@media (max-width: 480px) {
+  .favorites-header {
+    padding: 0 var(--padding-mobile-small);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .retry-btn {
+    animation: none !important;
+    transition: none !important;
+  }
+}
