@@ -2,11 +2,14 @@
   "name": "cat-pinterest-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://anna-shr.github.io/frontend-challenge",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "next": "16.2.3",
@@ -21,6 +24,7 @@
     "autoprefixer": "^10.4.27",
     "eslint": "^9",
     "eslint-config-next": "16.2.3",
+    "gh-pages": "^6.3.0",
     "typescript": "^5"
   },
   "browserslist": {

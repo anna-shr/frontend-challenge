@@ -1,5 +1,7 @@
 import type { NextConfig } from 'next';
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
@@ -8,12 +10,13 @@ const nextConfig: NextConfig = {
         hostname: '**.thecatapi.com',
       },
     ],
+    unoptimized: true
   },
   reactStrictMode: true,
   
   output: 'export',
-  
-  basePath: '/cat-pinterest-app',
+  assetPrefix: isProd ? '/frontend-challenge/cat-pinterest-app' : '',
+  basePath: isProd ? '/frontend-challenge/cat-pinterest-app' : '',
   
   env: {
     NEXT_PUBLIC_BASE_PATH: '/frontend-challenge',
