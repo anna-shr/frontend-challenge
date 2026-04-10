@@ -15,8 +15,8 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   
   output: 'export',
-  assetPrefix: isProd ? '/frontend-challenge/cat-pinterest-app' : '',
-  basePath: isProd ? '/frontend-challenge/cat-pinterest-app' : '',
+  assetPrefix: isProd ? '/frontend-challenge/' : '',
+  basePath: isProd ? '/frontend-challenge' : '',
   
   env: {
     NEXT_PUBLIC_BASE_PATH: '/frontend-challenge',
