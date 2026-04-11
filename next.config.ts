@@ -19,7 +19,7 @@ const nextConfig: NextConfig = {
   basePath: isProd ? '/frontend-challenge' : '',
   
   env: {
-    NEXT_PUBLIC_BASE_PATH: '/frontend-challenge',
+    NEXT_PUBLIC_BASE_PATH: isProd ? '/frontend-challenge' : '',
   },
 };
 
