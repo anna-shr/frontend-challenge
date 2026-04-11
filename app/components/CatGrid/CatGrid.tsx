@@ -78,8 +78,8 @@ export const CatGrid = ({
               >
                 <Image
                   src={cat.isFavorite
-                    ? `${process.env.NEXT_PUBLIC_BASE_PATH}/favorite.png`
-                    : `${process.env.NEXT_PUBLIC_BASE_PATH}/favorite_border.png`
+                    ? '/favorite.png'
+                    : '/favorite_border.png'
                   }
                   alt=""
                   width={40}
