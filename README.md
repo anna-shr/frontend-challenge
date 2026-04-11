@@ -1,15 +1,15 @@
 # 🐱 Кошачий пинтерест
 
-Это веб-приложение с картинками котиков и возможностью добавлять их в избранное.
-Картинки загружаются из [The Cat API](https://thecatapi.com)
+Это веб-приложение с картинками котиков и возможностью добавлять их в избранное
 
-[Запустить приложение](https://anna-shr.github.io/frontend-challenge/)
+[Запустить демо](https://anna-shr.github.io/frontend-challenge/)
 
 ## Использованные технологии
 
 - **Next.js**
 - **React**
 - **TypeScript**
+- **API**
 - **SCSS**
 - **ESLint**
 - **Autoprefixer**
@@ -24,3 +24,5 @@
 - Бесконечная прокрутка
 - Кроссбраузерность
 - Семантические теги
+
+<img width="1440" height="769" alt="preview" src="https://github.com/user-attachments/assets/8ad14093-43a1-42b9-b59b-f4428ab94dea" />
